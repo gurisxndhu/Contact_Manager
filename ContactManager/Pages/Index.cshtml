@@ -1,0 +1,80 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contact Manager </h1>
+    <h5>ASP.NET Core web app with user data protected by authorization</h5>
+    
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <h2> Project Summary</h2>
+        <div class="col">
+        An ASP.NET Core web application with user data safeguarded through authorization. The app showcases a list of contacts, which can be viewed by authenticated (registered) users who have created them. There are three distinct security groups:
+        </div>
+        <p></p>
+    </div>
+    <div class="row">
+        <div class="col">
+        1. <b>Registered users</b> have the privilege to view all approved data and can edit or delete their own contact information.
+            </div>
+      
+    </div>
+    <div class="row">
+        <div class="col">
+        2. <b>Managers</b> possess the authority to approve or reject contact data. Only contacts that are approved will be visible to regular users.
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col">
+        3. <b>Administrators</b> have full control, being able to approve or reject any contact data and also edit or delete any existing data.
+        </div>
+    </div>
+        
+        
+</div>
+<hr>
+<h2> Group Members :</h2>
+<p></p>
+<table class="table table-striped table-secondary">
+    <thead >
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Student ID</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Gurinder Singh Sandhu</td>
+            <td>200553737</td>
+            
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Mandeep Singh Sawhney</td>
+            <td>200557021</td>
+            
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Bhavy Jiteshkumar Shah</td>
+            <td>200553172</td>
+            
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Shubham Shubham</td>
+            <td>200557841</td>
+
+        </tr>
+    </tbody>
+</table>
